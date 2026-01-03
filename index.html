@@ -260,13 +260,15 @@ border-radius: 8px;
 background-color: rgba(255, 255, 255, 0.200);
 }
 .main{
-display: flex;
+display: grid;
+grid: auto / auto auto auto;
+grid-auto-columns: max-content;
 flex-wrap: wrap;
 width: auto;
 }
 .tooltiptext {
   visibility: hidden;
-  width: 200px;
+  width: fit-content;
   background-color: black;
   color: #fff;
   text-align: left;
